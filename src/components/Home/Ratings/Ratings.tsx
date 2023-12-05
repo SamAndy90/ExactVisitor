@@ -46,9 +46,9 @@ function Ratings() {
         setStopCode(true);
       }
     }
-    window.addEventListener("scroll", activateCircles);
+    globalThis.addEventListener("scroll", activateCircles);
     return () => {
-      window.removeEventListener("scroll", activateCircles);
+      globalThis.removeEventListener("scroll", activateCircles);
     };
   }, [stopCode]);
   return (
