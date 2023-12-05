@@ -29,7 +29,7 @@ function Ratings() {
       ];
 
       if (
-        globalThis.scrollY > circlesSectionOffset - 600 &&
+        globalThis.window.scrollY > circlesSectionOffset - 600 &&
         stopCode === false
       ) {
         for (let i = 0; i < circles.length; i++) {
@@ -46,9 +46,9 @@ function Ratings() {
         setStopCode(true);
       }
     }
-    globalThis.addEventListener("scroll", activateCircles);
+    globalThis.window.addEventListener("scroll", activateCircles);
     return () => {
-      globalThis.removeEventListener("scroll", activateCircles);
+      globalThis.window.removeEventListener("scroll", activateCircles);
     };
   }, [stopCode]);
   return (

@@ -12,20 +12,20 @@ import Strategic from "@/components/Home/Strategic/Strategic";
 import UseCases from "@/components/Home/UseCases/UseCases";
 
 export default function Home() {
-    return (
-        <>
-            <Hero />
-            <Brands />
-            <UseCases />
-            <Discover />
-            <Strategic />
-            <Prospects />
-            <Proposal />
-            <BestOfAll />
-            <Personalize />
-            <Slider />
-            <Ratings />
-            <GetStarted />
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <Brands />
+      <UseCases />
+      <Discover />
+      <Strategic />
+      <Prospects />
+      <Proposal />
+      <BestOfAll />
+      <Personalize />
+      <Slider />
+      <Ratings />
+      <GetStarted />
+    </>
+  );
 }
