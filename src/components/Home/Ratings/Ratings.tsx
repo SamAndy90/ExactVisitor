@@ -28,7 +28,10 @@ function Ratings() {
         prog3.current!,
       ];
 
-      if (window.scrollY > circlesSectionOffset - 600 && stopCode === false) {
+      if (
+        globalThis.scrollY > circlesSectionOffset - 600 &&
+        stopCode === false
+      ) {
         for (let i = 0; i < circles.length; i++) {
           const radius = circles[i].r.baseVal.value;
           const dashArray = radius * Math.PI * 2;
