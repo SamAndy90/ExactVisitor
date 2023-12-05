@@ -30,7 +30,7 @@ function Ratings() {
 
       if (window.scrollY > circlesSectionOffset - 600 && stopCode === false) {
         for (let i = 0; i < circles.length; i++) {
-          let radius = circles[i].r.baseVal.value;
+          const radius = circles[i].r.baseVal.value;
           const dashArray = radius * Math.PI * 2;
           circles[i].style.strokeDasharray = `${dashArray}`;
           const setProgress = (percent: number) => {
@@ -85,7 +85,7 @@ function Ratings() {
               "flex flex-col justify-between gap-x-1 gap-y-6 text-center sm:flex-row md:text-left"
             }
             ref={section}
-            id="circlesSection"
+            id={"circlesSection"}
           >
             <div
               className={

@@ -23,7 +23,7 @@ function Header() {
             className={
                 "fixed z-50 w-full overflow-visible py-3 bg-white border-b border-b-[#E3E3E3]"
             }>
-            <Container className="max-w-screen-xl+">
+            <Container className={"max-w-screen-xl+"}>
                 <div className={"flex items-center justify-between"}>
                     <div
                         className={
@@ -67,7 +67,7 @@ function Header() {
                         </nav>
                     </div>
                     <div className={"flex items-center justify-end"}>
-                        <div className="hidden lg:flex items-center justify-end gap-6">
+                        <div className={"hidden lg:flex items-center justify-end gap-6"}>
                             <ButtonBase
                                 className={{
                                     button: "text-xs text-[#222] py-3 px-5 border border-[#E0E0E0] rounded-lg hover:text-blue-600 transition-colors hover:border-[#222]",

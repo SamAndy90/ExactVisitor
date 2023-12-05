@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.29",

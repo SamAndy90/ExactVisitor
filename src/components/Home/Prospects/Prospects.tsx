@@ -31,7 +31,7 @@ function Prospects() {
                         provide relevant and genuinely helpful content that
                         resonates with your audience.
                     </p>
-                    <div className="h-32 sm:h-40 md:h-44 lg:h-[240px] xl:h-[270px] flex gap-4 min-w-[700px] mx-auto">
+                    <div className={"h-32 sm:h-40 md:h-44 lg:h-[240px] xl:h-[270px] flex gap-4 min-w-[700px] mx-auto"}>
                         <div className={"-ml-5 pt-[8%]"}>
                             <Image
                                 src={IMG1}

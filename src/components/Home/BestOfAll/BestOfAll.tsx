@@ -7,7 +7,7 @@ function BestOfAll() {
         <section className={"bg-black text-white"}>
             <Container>
                 <div className={"py-16 md:py-20 lg:pt-24 text-center"}>
-                    <Title component={"h3"} className="mb-8 md:text-[55px]">
+                    <Title component={"h3"} className={"mb-8 md:text-[55px]"}>
                         Best of all it is free for 3 Months!
                     </Title>
                     <div

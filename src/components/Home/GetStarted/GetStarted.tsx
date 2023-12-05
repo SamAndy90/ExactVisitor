@@ -7,7 +7,7 @@ function GetStarted() {
         <section className={"bg-mainBlue-500 text-white"}>
             <Container>
                 <div className={"py-20 md:py-28 lg:py-36 text-center"}>
-                    <Title className="mb-12">
+                    <Title className={"mb-12"}>
                         Get started with
                         <br />
                         Exact

@@ -71,8 +71,8 @@ function Hero() {
     { image: "img8", endPoint: 700 },
   ];
   useLayoutEffect(() => {
-    for (let { image, endPoint } of endPointAnimation) {
-      let tl = gsap.timeline({
+    for (const { image, endPoint } of endPointAnimation) {
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".section",
           start: "top 74%",

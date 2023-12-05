@@ -25,7 +25,7 @@ function Slider() {
                     }>
                     <Swiper
                         modules={[EffectFade, Navigation]}
-                        effect="fade"
+                        effect={"fade"}
                         loop
                         navigation={{
                             nextEl: "#next-slide-btn",

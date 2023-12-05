@@ -1,76 +1,79 @@
-import { Container, Title } from "@/common/ui";
 import Image from "next/image";
-import CompassIcon from "./static/clockIcon.svg";
-import ClockIcon from "./static/clockIcon.svg";
-import RatingIcon from "./static/ratingIcon.svg";
+
+import { Container, Title } from "@/common/ui";
+
 import ArrowIcon from "./static/arrowIcon.svg";
+import ClockIcon from "./static/clockIcon.svg";
+import CompassIcon from "./static/compassIcon.svg";
+import RatingIcon from "./static/ratingIcon.svg";
 
 function UseCases() {
-    return (
-        <section>
-            <Container>
-                <div className={"font-inter py-11"}>
-                    <Title
-                        component={"h4"}
-                        className={
-                            "text-xl md:text-xl text-center mb-3 sm:mb-6 md:mb-8"
-                        }>
-                        Use cases
-                    </Title>
-                    <div
-                        className={
-                            "flex flex-col lg:flex-row justify-center gap-3 md:gap-4 lg:gap-6"
-                        }>
-                        <div
-                            className={
-                                "flex-1 flex items-center justify-between gap-7 border border-[#E5E7EB] rounded-xl pl-7 pr-6 py-4 w-full max-w-md mx-auto"
-                            }>
-                            <Image src={CompassIcon} alt={"Compass Icon"} />
-                            <div className={"flex-1"}>
-                                <h6 className={"text-[#111827] text-[15px]"}>
-                                    For Founders
-                                </h6>
-                                <p className={"text-[#6B7280] text-sm"}>
-                                    Find your winning GTM strategy
-                                </p>
-                            </div>
-                            <Image src={ArrowIcon} alt={"Arrow Icon"} />
-                        </div>
-                        <div
-                            className={
-                                "flex-1 flex items-center justify-between gap-7 border border-[#E5E7EB] rounded-xl pl-7 pr-6 py-4 w-full max-w-md mx-auto"
-                            }>
-                            <Image src={ClockIcon} alt={"Compass Icon"} />
-                            <div className={"flex-1"}>
-                                <h6 className={"text-[#111827] text-[15px]"}>
-                                    For Sales Teams
-                                </h6>
-                                <p className={"text-[#6B7280] text-sm"}>
-                                    Get a competitive edge
-                                </p>
-                            </div>
-                            <Image src={ArrowIcon} alt={"Arrow Icon"} />
-                        </div>
-                        <div
-                            className={
-                                "flex-1 flex items-center justify-between gap-7 border border-[#E5E7EB] rounded-xl pl-7 pr-6 py-4 w-full max-w-md mx-auto"
-                            }>
-                            <Image src={RatingIcon} alt={"Rating Icon"} />
-                            <div className={"flex-1"}>
-                                <h6 className={"text-[#111827] text-[15px]"}>
-                                    For Marketing Teams
-                                </h6>
-                                <p className={"text-[#6B7280] text-sm"}>
-                                    Convert content into pipeline
-                                </p>
-                            </div>
-                            <Image src={ArrowIcon} alt={"Arrow Icon"} />
-                        </div>
-                    </div>
-                </div>
-            </Container>
-        </section>
-    );
+  return (
+    <section>
+      <Container>
+        <div className={"py-11 font-inter"}>
+          <Title
+            component={"h4"}
+            className={"mb-3 text-center text-xl sm:mb-6 md:mb-8 md:text-xl"}
+          >
+            Use cases
+          </Title>
+          <div
+            className={
+              "flex flex-col justify-center gap-3 md:gap-4 lg:flex-row lg:gap-6"
+            }
+          >
+            <div
+              className={
+                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6"
+              }
+            >
+              <Image src={CompassIcon} alt={"Compass Icon"} />
+              <div className={"flex-1"}>
+                <h6 className={"text-[15px] text-[#111827]"}>For Founders</h6>
+                <p className={"text-sm text-[#6B7280]"}>
+                  Find your winning GTM strategy
+                </p>
+              </div>
+              <Image src={ArrowIcon} alt={"Arrow Icon"} />
+            </div>
+            <div
+              className={
+                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6"
+              }
+            >
+              <Image src={ClockIcon} alt={"Compass Icon"} />
+              <div className={"flex-1"}>
+                <h6 className={"text-[15px] text-[#111827]"}>
+                  For Sales Teams
+                </h6>
+                <p className={"text-sm text-[#6B7280]"}>
+                  Get a competitive edge
+                </p>
+              </div>
+              <Image src={ArrowIcon} alt={"Arrow Icon"} />
+            </div>
+            <div
+              className={
+                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6"
+              }
+            >
+              <Image src={RatingIcon} alt={"Rating Icon"} />
+              <div className={"flex-1"}>
+                <h6 className={"text-[15px] text-[#111827]"}>
+                  For Marketing Teams
+                </h6>
+                <p className={"text-sm text-[#6B7280]"}>
+                  Convert content into pipeline
+                </p>
+              </div>
+              <Image src={ArrowIcon} alt={"Arrow Icon"} />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
 }
 
 export default UseCases;
