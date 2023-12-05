@@ -1,6 +1,6 @@
 "use client";
 
-import Lenis from "@studio-freight/lenis";
+// import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -18,7 +18,7 @@ import AvatarIcon7 from "./static/avatarIcon7.png";
 import AvatarIcon8 from "./static/avatarIcon8.png";
 import ListImage from "./static/heroImage.jpg";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 // const lenis = new Lenis();
 
 // lenis.on("scroll", ScrollTrigger.update);
