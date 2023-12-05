@@ -1,6 +1,5 @@
 "use client";
 
-// import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -19,15 +18,6 @@ import AvatarIcon8 from "./static/avatarIcon8.png";
 import ListImage from "./static/heroImage.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
-// const lenis = new Lenis();
-
-// lenis.on("scroll", ScrollTrigger.update);
-
-// gsap.ticker.add((time) => {
-//   lenis.raf(time * 1000);
-// });
-
-// gsap.ticker.lagSmoothing(0);
 
 function Hero() {
   useLayoutEffect(() => {
