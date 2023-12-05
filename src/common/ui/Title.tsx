@@ -12,7 +12,10 @@ export function Title(props: TitleProps) {
 
     return (
         <Component
-            className={twMerge("text-[40px] font-semibold !leading-tight md:text-5xl", className)}>
+            className={twMerge(
+                "text-5xl !leading-tight md:text-[65px]",
+                className
+            )}>
             {children}
         </Component>
     );

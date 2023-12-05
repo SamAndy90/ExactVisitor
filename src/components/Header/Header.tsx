@@ -107,6 +107,7 @@ function Header() {
                                         "flex flex-col items-start justify-between gap-8 text-lg text-[#222] mb-10"
                                     }>
                                     <Link
+                                        onClick={() => setMenuIsOpen(false)}
                                         href={"#features"}
                                         className={
                                             "hover:text-mainBlue-500 transition-colors"
@@ -114,6 +115,7 @@ function Header() {
                                         Features
                                     </Link>
                                     <Link
+                                        onClick={() => setMenuIsOpen(false)}
                                         href={"#customers"}
                                         className={
                                             "hover:text-mainBlue-500 transition-colors"
@@ -121,6 +123,7 @@ function Header() {
                                         Customers
                                     </Link>
                                     <Link
+                                        onClick={() => setMenuIsOpen(false)}
                                         href={"#pricing"}
                                         className={
                                             "hover:text-mainBlue-500 transition-colors"
@@ -128,6 +131,7 @@ function Header() {
                                         Pricing
                                     </Link>
                                     <Link
+                                        onClick={() => setMenuIsOpen(false)}
                                         href={"#integrations"}
                                         className={
                                             "hover:text-mainBlue-500 transition-colors"
@@ -137,12 +141,14 @@ function Header() {
                                 </nav>
                                 <div className={"flex flex-col gap-3 "}>
                                     <ButtonBase
+                                        onClick={() => setMenuIsOpen(false)}
                                         className={{
                                             button: "text-xs text-[#222] py-3 px-5 border border-[#E0E0E0] rounded-lg hover:text-blue-600 transition-colors hover:border-black",
                                         }}>
                                         Login
                                     </ButtonBase>
                                     <ButtonBase
+                                        onClick={() => setMenuIsOpen(false)}
                                         className={{
                                             button: "text-xs text-white py-3 px-5 bg-mainBlue-500 rounded-lg hover:bg-blue-600 transition-colors",
                                         }}>

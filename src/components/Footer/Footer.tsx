@@ -1,8 +1,4 @@
-// import Facebook from "./static/Facebook";
-// import Instagram from "./static/Instagram";
-// import Telegram from "./static/Telegram";
-// import Tiktok from "./static/Tiktok";
-import { Container, Title } from "@/common/ui";
+import { Container } from "@/common/ui";
 import Image from "next/image";
 import Link from "next/link";
 import FBIcon from "./static/facebookIcon.svg";
@@ -297,6 +293,7 @@ function Footer() {
                         </div>
                         <div className={"flex items-center justify-end gap-5"}>
                             <Link
+                                target={"_blank"}
                                 href={"#"}
                                 className={
                                     "hover:-translate-y-1 transition-transform"
@@ -304,6 +301,7 @@ function Footer() {
                                 <Image src={FBIcon} alt={"Facebook"} />
                             </Link>
                             <Link
+                                target={"_blank"}
                                 href={"#"}
                                 className={
                                     "hover:-translate-y-1 transition-transform"
@@ -311,6 +309,7 @@ function Footer() {
                                 <Image src={InstaIcon} alt={"Instagram"} />
                             </Link>
                             <Link
+                                target={"_blank"}
                                 href={"#"}
                                 className={
                                     "hover:-translate-y-1 transition-transform"
@@ -318,6 +317,7 @@ function Footer() {
                                 <Image src={LinkedInIcon} alt={"LinkedIn"} />
                             </Link>
                             <Link
+                                target={"_blank"}
                                 href={"#"}
                                 className={
                                     "hover:-translate-y-1 transition-transform"
