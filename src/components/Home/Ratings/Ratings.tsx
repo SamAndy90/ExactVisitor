@@ -27,29 +27,29 @@ function Ratings() {
         prog2.current!,
         prog3.current!,
       ];
-
-      if (
-        globalThis.window.scrollY > circlesSectionOffset - 600 &&
-        stopCode === false
-      ) {
-        for (let i = 0; i < circles.length; i++) {
-          const radius = circles[i].r.baseVal.value;
-          const dashArray = radius * Math.PI * 2;
-          circles[i].style.strokeDasharray = `${dashArray}`;
-          const setProgress = (percent: number) => {
-            circles[i].style.strokeDashoffset = `${
-              dashArray - (dashArray * percent) / 100
-            }`;
-          };
-          setProgress(rateValues[i]);
+      if (typeof window !== "undefined") {
+        if (window.scrollY > circlesSectionOffset - 600 && stopCode === false) {
+          for (let i = 0; i < circles.length; i++) {
+            const radius = circles[i].r.baseVal.value;
+            const dashArray = radius * Math.PI * 2;
+            circles[i].style.strokeDasharray = `${dashArray}`;
+            const setProgress = (percent: number) => {
+              circles[i].style.strokeDashoffset = `${
+                dashArray - (dashArray * percent) / 100
+              }`;
+            };
+            setProgress(rateValues[i]);
+          }
+          setStopCode(true);
         }
-        setStopCode(true);
       }
     }
-    globalThis.window.addEventListener("scroll", activateCircles);
-    return () => {
-      globalThis.window.removeEventListener("scroll", activateCircles);
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", activateCircles);
+      return () => {
+        window.removeEventListener("scroll", activateCircles);
+      };
+    }
   }, [stopCode]);
   return (
     <section className={"py-8 md:pb-16 md:pt-14"}>
