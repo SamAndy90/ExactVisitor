@@ -29,48 +29,18 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-// type PositionsType = {
-//     x: number;
-//     y: number;
-// };
-
 function Hero() {
-  // const [scroll, setScroll] = useState<number>(0);
-  // const [positions, setPositions] = useState([{ x: -2000, y: -90 }]);
-
-  // function calculatePosition(positions: PositionsType[], scroll: number) {
-  //     if (scroll >= 400) return positions;
-  //     let res = positions.map((pos) => {
-  //         pos.x = pos.x * (1 - scroll / 400);
-  //         pos.y = pos.y * (1 - scroll / 400);
-  //         return pos;
-  //     });
-
-  //     return res;
-  // }
-  // useEffect(() => {
-  //     setScroll(window.scrollY);
-  //     setPositions(() => calculatePosition(positions, scroll));
-  // }, []);
-
-  // useEffect(() => {
-  //     setPositions(() => calculatePosition(positions, scroll));
-  //     window.addEventListener("scroll", () => {
-  //         setScroll(window.scrollY);
-  //     });
-  // }, [scroll]);
-
-  const endPointAnimation = [
-    { image: "img1", endPoint: 400 },
-    { image: "img2", endPoint: 450 },
-    { image: "img3", endPoint: 500 },
-    { image: "img4", endPoint: 550 },
-    { image: "img5", endPoint: 600 },
-    { image: "img6", endPoint: 650 },
-    { image: "img7", endPoint: 700 },
-    { image: "img8", endPoint: 700 },
-  ];
   useLayoutEffect(() => {
+    const endPointAnimation = [
+      { image: "img1", endPoint: 400 },
+      { image: "img2", endPoint: 450 },
+      { image: "img3", endPoint: 500 },
+      { image: "img4", endPoint: 550 },
+      { image: "img5", endPoint: 600 },
+      { image: "img6", endPoint: 650 },
+      { image: "img7", endPoint: 700 },
+      { image: "img8", endPoint: 700 },
+    ];
     for (const { image, endPoint } of endPointAnimation) {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -114,7 +84,7 @@ function Hero() {
               "mx-auto mb-5 max-w-[585px] font-inter text-lg text-[#1A1A1A]"
             }
           >
-            60% of companies engaging with your site aren't in your CRM.
+            60% of companies engaging with your site aren&apos;t in your CRM.
             Identify your top prospects, engage them back, and
           </p>
           <ButtonBase

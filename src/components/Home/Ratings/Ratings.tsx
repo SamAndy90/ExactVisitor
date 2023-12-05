@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-import CircleProgressBar from "./CircleProgressBar";
+import { CircleProgressBar } from "./CircleProgressBar";
 import { Container, Title } from "@/common/ui";
 
 import RatingIcon from "./static/ratingsIcon.png";
@@ -97,7 +97,6 @@ function Ratings() {
                   ref={prog1}
                   circleWidth={94}
                   strokeWidth={3}
-                  percentage={100}
                   color={"stroke-rate1-500"}
                 />
                 <span
@@ -123,7 +122,6 @@ function Ratings() {
                   ref={prog2}
                   circleWidth={94}
                   strokeWidth={3}
-                  percentage={98}
                   color={"stroke-rate2-500"}
                 />
                 <span
@@ -151,7 +149,6 @@ function Ratings() {
                   ref={prog3}
                   circleWidth={94}
                   strokeWidth={3}
-                  percentage={97}
                   color={"stroke-rate3-500"}
                 />
                 <span
