@@ -22,14 +22,14 @@ gsap.registerPlugin(ScrollTrigger);
 function Hero() {
   useLayoutEffect(() => {
     const endPointAnimation = [
-      { image: "img1", endPoint: 400 },
-      { image: "img2", endPoint: 450 },
-      { image: "img3", endPoint: 500 },
-      { image: "img4", endPoint: 550 },
-      { image: "img5", endPoint: 600 },
-      { image: "img6", endPoint: 650 },
-      { image: "img7", endPoint: 700 },
-      { image: "img8", endPoint: 700 },
+      { image: "img1", endPoint: 600 },
+      { image: "img2", endPoint: 650 },
+      { image: "img3", endPoint: 700 },
+      { image: "img4", endPoint: 700 },
+      { image: "img5", endPoint: 400 },
+      { image: "img6", endPoint: 450 },
+      { image: "img7", endPoint: 500 },
+      { image: "img8", endPoint: 550 },
     ];
     for (const { image, endPoint } of endPointAnimation) {
       const tl = gsap.timeline({
@@ -37,14 +37,13 @@ function Hero() {
           trigger: ".section",
           start: "top 74%",
           end: `+=${endPoint} 90%`,
-          scrub: true,
+          scrub: 0.4,
         },
       });
       tl.to(`.${image}`, {
         y: 0,
         x: 0,
-        scale: 1,
-        duration: 3,
+        scale: 0.5,
       });
     }
   }, []);
@@ -109,65 +108,65 @@ function Hero() {
           <Image
             src={AvatarIcon1}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img1 z-50] absolute left-[39.5%] top-[32.5%] hidden -translate-x-[560px] -translate-y-[690px] scale-125 lg:block"
+              "img1 z-50] absolute left-[7.7%] top-[65.2%] hidden -translate-x-[200px] -translate-y-[900px] lg:block"
             }
-          />{" "}
+          />
           <Image
             src={AvatarIcon2}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img2 z-50] absolute left-[39.5%] top-[40.9%] hidden -translate-x-[450px] -translate-y-[660px] scale-[1.3] lg:block"
+              "img2 z-50] absolute left-[7.7%] top-[73.5%] hidden -translate-x-[100px] -translate-y-[870px] scale-105 lg:block"
             }
-          />{" "}
+          />
           <Image
             src={AvatarIcon3}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img3 z-50] absolute left-[39.5%] top-[49.3%] hidden -translate-x-[540px] -translate-y-[680px] scale-95 lg:block"
+              "img3 z-50] absolute left-[7.7%] top-[81.8%] hidden -translate-x-[180px] -translate-y-[890px] scale-75 lg:block"
             }
           />{" "}
           <Image
             src={AvatarIcon4}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img4 z-50] absolute left-[39.5%] top-[57.7%] hidden -translate-x-[480px] -translate-y-[670px] scale-150 lg:block"
+              "img4 z-50] absolute left-[7.7%] top-[81.8%] hidden -translate-x-[130px] -translate-y-[830px] scale-125 lg:block"
             }
           />{" "}
           <Image
             src={AvatarIcon5}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img5 z-50] absolute left-[39.5%] top-[66%] hidden -translate-y-[910px] translate-x-[650px] scale-125 lg:block"
+              "img5 z-50] absolute left-[7.7%] top-[31.8%] hidden -translate-y-[680px] translate-x-[1020px] lg:block"
             }
           />{" "}
           <Image
             src={AvatarIcon6}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img6 z-50] absolute left-[39.5%] top-[74.5%] hidden -translate-y-[875px] translate-x-[760px] scale-[1.3] lg:block"
+              "img6 z-50] absolute left-[7.7%] top-[40.1%] hidden -translate-y-[660px] translate-x-[1140px] scale-105 lg:block"
             }
           />{" "}
           <Image
             src={AvatarIcon7}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img7 z-50] absolute left-[39.5%] top-[82.7%] hidden -translate-y-[900px] translate-x-[670px] scale-95 lg:block"
+              "img7 z-50] absolute left-[7.7%] top-[48.5%] hidden -translate-y-[680px] translate-x-[1050px] scale-75 lg:block"
             }
           />{" "}
           <Image
             src={AvatarIcon8}
             alt={"Avatar Icon"}
-            width={40}
+            width={50}
             className={
-              "img8 z-50] absolute left-[39.5%] top-[82.7%] hidden -translate-y-[820px] translate-x-[730px] scale-150 lg:block"
+              "img8 z-50] absolute left-[7.7%] top-[56.8%] hidden -translate-y-[670px] translate-x-[1100px] scale-125 lg:block"
             }
           />
         </div>
