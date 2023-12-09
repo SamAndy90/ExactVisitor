@@ -18,7 +18,30 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "ExactVisitor",
-  description: "ExactVisitor description",
+  description: "Welcome to ExactVisitor",
+  icons: {
+    icon: [
+      {
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon-32x32.png",
+      },
+      {
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon-16x16.png",
+      },
+    ],
+    apple: {
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+    },
+  },
+  manifest: "/site.webmanifest",
+  themeColor: "#ffffff",
+  other: {
+    "msapplication-TileColor": "#ffffff",
+  },
 };
 
 export default function RootLayout({
