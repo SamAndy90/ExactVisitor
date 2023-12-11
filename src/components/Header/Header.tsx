@@ -29,7 +29,7 @@ function Header() {
       <Container className={"max-w-screen-xl+"}>
         <div className={"flex items-center justify-between"}>
           <div className={"flex basis-1/2 items-center justify-between gap-16"}>
-            <Link href={"/"} className={"flex-shrink-0"}>
+            <Link href={"#"} className={"flex-shrink-0"}>
               <Image src={Logo} alt={"Logo"} />
             </Link>
             <nav
@@ -38,25 +38,25 @@ function Header() {
               }
             >
               <Link
-                href={"#features"}
+                href={"#"}
                 className={"transition-colors hover:text-mainBlue-500"}
               >
                 Features
               </Link>
               <Link
-                href={"#customers"}
+                href={"#"}
                 className={"transition-colors hover:text-mainBlue-500"}
               >
                 Customers
               </Link>
               <Link
-                href={"#pricing"}
+                href={"#"}
                 className={"transition-colors hover:text-mainBlue-500"}
               >
                 Pricing
               </Link>
               <Link
-                href={"#integrations"}
+                href={"#"}
                 className={"transition-colors hover:text-mainBlue-500"}
               >
                 Integrations
@@ -71,7 +71,7 @@ function Header() {
                     "rounded-lg border border-[#E0E0E0] px-5 py-3 text-xs text-[#222] transition-colors hover:border-[#222] hover:text-blue-600",
                 }}
               >
-                Login
+                <Link href={"#"}>Login</Link>
               </ButtonBase>
               <ButtonBase
                 className={{
@@ -79,7 +79,7 @@ function Header() {
                     "rounded-lg bg-mainBlue-500 px-2.5 py-3 text-xs text-white transition-colors hover:bg-blue-600",
                 }}
               >
-                Try Exact
+                <Link href={"#"}>Try Exact</Link>
                 <span className={"font-bold"}>visitor</span>
               </ButtonBase>
             </div>
@@ -110,28 +110,28 @@ function Header() {
                 >
                   <Link
                     onClick={() => setMenuIsOpen(false)}
-                    href={"#features"}
+                    href={"#"}
                     className={"transition-colors hover:text-mainBlue-500"}
                   >
                     Features
                   </Link>
                   <Link
                     onClick={() => setMenuIsOpen(false)}
-                    href={"#customers"}
+                    href={"#"}
                     className={"transition-colors hover:text-mainBlue-500"}
                   >
                     Customers
                   </Link>
                   <Link
                     onClick={() => setMenuIsOpen(false)}
-                    href={"#pricing"}
+                    href={"#"}
                     className={"transition-colors hover:text-mainBlue-500"}
                   >
                     Pricing
                   </Link>
                   <Link
                     onClick={() => setMenuIsOpen(false)}
-                    href={"#integrations"}
+                    href={"#"}
                     className={"transition-colors hover:text-mainBlue-500"}
                   >
                     Integrations
@@ -145,7 +145,7 @@ function Header() {
                         "rounded-lg border border-[#E0E0E0] px-5 py-3 text-xs text-[#222] transition-colors hover:border-black hover:text-blue-600",
                     }}
                   >
-                    Login
+                    <Link href={"#"}>Login</Link>
                   </ButtonBase>
                   <ButtonBase
                     onClick={() => setMenuIsOpen(false)}
@@ -154,7 +154,7 @@ function Header() {
                         "rounded-lg bg-mainBlue-500 px-5 py-3 text-xs text-white transition-colors hover:bg-blue-600",
                     }}
                   >
-                    Try Exact
+                    <Link href={"#"}>Try Exact</Link>
                     <span className={"font-bold"}>visitor</span>
                   </ButtonBase>
                 </div>

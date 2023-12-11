@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { Container, Title } from "@/common/ui";
 
@@ -23,9 +24,10 @@ function UseCases() {
               "flex flex-col justify-center gap-3 md:gap-4 lg:flex-row lg:gap-6"
             }
           >
-            <div
+            <Link
+              href={"#"}
               className={
-                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6"
+                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6 transition-shadow hover:shadow-md"
               }
             >
               <Image src={CompassIcon} alt={"Compass Icon"} />
@@ -36,10 +38,11 @@ function UseCases() {
                 </p>
               </div>
               <Image src={ArrowIcon} alt={"Arrow Icon"} />
-            </div>
-            <div
+            </Link>
+            <Link
+              href={"#"}
               className={
-                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6"
+                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6 transition-shadow hover:shadow-md"
               }
             >
               <Image src={ClockIcon} alt={"Compass Icon"} />
@@ -52,10 +55,11 @@ function UseCases() {
                 </p>
               </div>
               <Image src={ArrowIcon} alt={"Arrow Icon"} />
-            </div>
-            <div
+            </Link>
+            <Link
+              href={"#"}
               className={
-                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6"
+                "mx-auto flex w-full max-w-md flex-1 items-center justify-between gap-7 rounded-xl border border-[#E5E7EB] py-4 pl-7 pr-6 transition-shadow hover:shadow-md"
               }
             >
               <Image src={RatingIcon} alt={"Rating Icon"} />
@@ -68,7 +72,7 @@ function UseCases() {
                 </p>
               </div>
               <Image src={ArrowIcon} alt={"Arrow Icon"} />
-            </div>
+            </Link>
           </div>
         </div>
       </Container>
