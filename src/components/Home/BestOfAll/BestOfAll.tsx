@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { ButtonBase, Container, Title } from "@/common/ui";
 
@@ -36,7 +37,7 @@ function BestOfAll() {
                 "w-full rounded-lg bg-mainBlue-500 px-6 py-4 text-sm font-bold text-white transition-colors duration-300 hover:text-black sm:w-auto sm:px-12",
             }}
           >
-            Start my 3 Months free trial
+            <Link href={"#"}>Start my 3 Months free trial</Link>
           </ButtonBase>
         </div>{" "}
       </Container>

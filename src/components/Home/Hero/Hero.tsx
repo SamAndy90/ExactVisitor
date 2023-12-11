@@ -3,6 +3,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 import { useLayoutEffect } from "react";
 
 import { ButtonBase, Container, Title } from "@/common/ui";
@@ -82,7 +83,7 @@ function Hero() {
                 "mb-2 w-full rounded-2xl bg-mainBlue-500 px-7 py-3 text-sm font-bold text-white transition-colors hover:bg-blue-600 md:w-auto",
             }}
           >
-            See your leads for Free
+            <Link href={"#"}>See your leads for Free</Link>
           </ButtonBase>
           <div>
             <span
