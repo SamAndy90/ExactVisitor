@@ -7,10 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "eslint": "eslint --fix --ext .ts,.tsx ."
+    "lint:fix": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.29",
     "clsx": "^2.0.0",
     "gsap": "^3.12.3",
     "next": "14.0.3",

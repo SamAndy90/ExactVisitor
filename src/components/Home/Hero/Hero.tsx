@@ -35,7 +35,7 @@ function Hero() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".section",
-          start: "top 74%",
+          start: "top 66%",
           end: `+=${endPoint} 90%`,
           scrub: 0.4,
         },
